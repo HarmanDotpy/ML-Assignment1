@@ -1,2 +1,5 @@
 Medical_MNIST.zip
 Medical_MNIST
+Medical_test.npy
+Medical_train.npy
+Medical_MNIST_flattened.npy
