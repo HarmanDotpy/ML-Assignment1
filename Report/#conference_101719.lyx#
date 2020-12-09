@@ -39,6 +39,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -113,7 +114,7 @@ and
 This report contains all the experiments, observations, graphs and results
  for the Assignment 1 of ELL409.
  To the best of our knowledge, we have implemented all algorithms discussed
- in class, for all the given datasets datasets.
+ in class, for all the given datasets.
 \end_layout
 
 \begin_layout Section
@@ -161,7 +162,135 @@ Medical MNIST Data Question 3 - Multi - class Classification
 \end_layout
 
 \begin_layout Subsection
+Visualization
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/Medical_pca.jpeg
+	lyxscale 10
+	width 50col%
+	height 50col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/medical_tSNE_5000datapoints.png
+	lyxscale 10
+	width 50col%
+	height 50col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/Medical_var_vs_pcacomponents.jpeg
+	lyxscale 20
+	width 50col%
+	height 50col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+a) 2D visualization of PCA (2 component scatterplot) b)2D visualization
+ of tSNE for 10k of 50k training datapoints (2 component scatterplot) c)
+ cumulative amount of variance explained vs number of pca components
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Experiements
+\end_layout
+
+\begin_layout Standard
+We first used 2 components of the PCA output and ran the following algorithms
+ on this pca output data of the images
+\end_layout
+
+\begin_layout Subsubsection
+Naive Bayes
 \end_layout
 
 \begin_layout Subsection

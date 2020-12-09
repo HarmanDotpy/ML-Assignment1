@@ -27,7 +27,7 @@
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
 \font_default_family default
-\use_non_tex_fonts false
+\use_non_tex_fonts true
 \font_sc false
 \font_osf false
 \font_sf_scale 100 100
@@ -39,6 +39,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -113,7 +114,7 @@ and
 This report contains all the experiments, observations, graphs and results
  for the Assignment 1 of ELL409.
  To the best of our knowledge, we have implemented all algorithms discussed
- in class, for all the given datasets datasets.
+ in class, for all the given datasets.
 \end_layout
 
 \begin_layout Section
@@ -121,29 +122,181 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-This document is a model and instructions for \SpecialChar LaTeX
-.
- Please observe the conference page limits.
+Introduction of the assignment
 \end_layout
 
 \begin_layout Section
-Ease of Use
+Health Data Question 1 - Binary Classification
 \end_layout
 
 \begin_layout Subsection
-Maintaining the Integrity of the Specifications
+Experiements
+\end_layout
+
+\begin_layout Subsection
+Observations
+\end_layout
+
+\begin_layout Subsection
+conclusions
+\end_layout
+
+\begin_layout Section
+Weather Data Question 2 - Regression
+\end_layout
+
+\begin_layout Subsection
+Experiements
+\end_layout
+
+\begin_layout Subsection
+Observations
+\end_layout
+
+\begin_layout Subsection
+conclusions
+\end_layout
+
+\begin_layout Section
+Medical MNIST Data Question 3 - Multi - class Classification 
+\end_layout
+
+\begin_layout Subsection
+Visualization
 \end_layout
 
 \begin_layout Standard
-The IEEEtran class file is used to format your paper and style the text.
- All margins, column widths, line spaces, and text fonts are prescribed;
- please do not alter them.
- You may note peculiarities.
- For example, the head margin measures proportionately more than is customary.
- This measurement and others are deliberate, using specifications that anticipat
-e your paper as one part of the entire proceedings, and not as an independent
- document.
- Please do not revise any of the current designations.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/Medical_pca.jpeg
+	lyxscale 10
+	width 50col%
+	height 50col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/Medical_pca.jpeg
+	lyxscale 10
+	width 50col%
+	height 50col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+a) 2D visualization of PCA (2 component scatterplot) b)2D visualization
+ of tSNE (2 component scatterplot)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Experiements
+\end_layout
+
+\begin_layout Standard
+We first used 2 components of the PCA output and ran the following algorithms
+ on this pca output data of the images
+\end_layout
+
+\begin_layout Subsubsection
+Naive Bayes
+\end_layout
+
+\begin_layout Subsection
+Observations
+\end_layout
+
+\begin_layout Subsection
+conclusions
+\end_layout
+
+\begin_layout Section
+Learnings
 \end_layout
 
 \begin_layout Section
@@ -1652,70 +1805,6 @@ Temperature/K
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Section*
-Acknowledgment
-\end_layout
-
-\begin_layout Standard
-The preferred spelling of the word 
-\begin_inset Quotes eld
-\end_inset
-
-acknowledgment
-\begin_inset Quotes erd
-\end_inset
-
- in America is without an 
-\begin_inset Quotes eld
-\end_inset
-
-e
-\begin_inset Quotes erd
-\end_inset
-
- after the 
-\begin_inset Quotes eld
-\end_inset
-
-g
-\begin_inset Quotes erd
-\end_inset
-
-.
- Avoid the stilted expression 
-\begin_inset Quotes eld
-\end_inset
-
-one of us (R.
- B.
- G.) thanks 
-\begin_inset Formula $\ldots$
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-.
- Instead, try 
-\begin_inset Quotes eld
-\end_inset
-
-R.
- B.
- G.
- thanks
-\begin_inset Formula $\ldots$
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-.
- Put sponsor acknowledgments in the unnumbered footnote on the first page.
 \end_layout
 
 \begin_layout Section*
