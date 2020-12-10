@@ -138,7 +138,7 @@ AbdomenCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.99552
+0.99346
 \end_layout
 
 \end_inset
@@ -147,7 +147,7 @@ AbdomenCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.0
+0.9875
 \end_layout
 
 \end_inset
@@ -156,7 +156,7 @@ AbdomenCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.99775
+0.99047
 \end_layout
 
 \end_inset
@@ -185,7 +185,7 @@ BreastMRI
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.94737
+0.947
 \end_layout
 
 \end_inset
@@ -194,7 +194,7 @@ BreastMRI
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.99497
+0.98772
 \end_layout
 
 \end_inset
@@ -203,7 +203,7 @@ BreastMRI
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.97059
+0.96693
 \end_layout
 
 \end_inset
@@ -232,6 +232,15 @@ ChestCT
 \begin_inset Text
 
 \begin_layout Plain Layout
+0.98716
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 0.9995
 \end_layout
 
@@ -241,16 +250,7 @@ ChestCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.99975
+0.99329
 \end_layout
 
 \end_inset
@@ -279,7 +279,7 @@ CXR
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.96302
+0.96801
 \end_layout
 
 \end_inset
@@ -288,7 +288,7 @@ CXR
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.9895
+0.9835
 \end_layout
 
 \end_inset
@@ -297,7 +297,7 @@ CXR
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.97608
+0.97569
 \end_layout
 
 \end_inset
@@ -326,7 +326,7 @@ Hand
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.98668
+0.97379
 \end_layout
 
 \end_inset
@@ -335,7 +335,7 @@ Hand
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.926
+0.929
 \end_layout
 
 \end_inset
@@ -344,7 +344,7 @@ Hand
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.95538
+0.95087
 \end_layout
 
 \end_inset
@@ -373,7 +373,7 @@ HeadCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.96138
+0.95381
 \end_layout
 
 \end_inset
@@ -382,7 +382,7 @@ HeadCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.946
+0.9395
 \end_layout
 
 \end_inset
@@ -391,7 +391,7 @@ HeadCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.95363
+0.9466
 \end_layout
 
 \end_inset

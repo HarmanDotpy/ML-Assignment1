@@ -138,7 +138,7 @@ AbdomenCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.99471
+0.99535
 \end_layout
 
 \end_inset
@@ -147,7 +147,7 @@ AbdomenCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.98725
+0.98912
 \end_layout
 
 \end_inset
@@ -156,7 +156,7 @@ AbdomenCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.99097
+0.99223
 \end_layout
 
 \end_inset
@@ -185,7 +185,7 @@ BreastMRI
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.9448
+0.94416
 \end_layout
 
 \end_inset
@@ -194,7 +194,7 @@ BreastMRI
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.9845
+0.98674
 \end_layout
 
 \end_inset
@@ -203,7 +203,7 @@ BreastMRI
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.96424
+0.96498
 \end_layout
 
 \end_inset
@@ -232,7 +232,7 @@ ChestCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.98716
+0.98899
 \end_layout
 
 \end_inset
@@ -250,7 +250,7 @@ ChestCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.99329
+0.99422
 \end_layout
 
 \end_inset
@@ -279,7 +279,7 @@ CXR
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.96229
+0.96446
 \end_layout
 
 \end_inset
@@ -288,7 +288,7 @@ CXR
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.9825
+0.98375
 \end_layout
 
 \end_inset
@@ -297,7 +297,7 @@ CXR
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.97229
+0.97401
 \end_layout
 
 \end_inset
@@ -326,7 +326,7 @@ Hand
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.9749
+0.97718
 \end_layout
 
 \end_inset
@@ -335,7 +335,7 @@ Hand
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.92238
+0.92588
 \end_layout
 
 \end_inset
@@ -344,7 +344,7 @@ Hand
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.94791
+0.95084
 \end_layout
 
 \end_inset
@@ -373,7 +373,7 @@ HeadCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.94976
+0.95254
 \end_layout
 
 \end_inset
@@ -382,7 +382,7 @@ HeadCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.9405
+0.94088
 \end_layout
 
 \end_inset
@@ -391,7 +391,7 @@ HeadCT
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.94511
+0.94667
 \end_layout
 
 \end_inset
