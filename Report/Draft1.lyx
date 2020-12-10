@@ -357,6 +357,8 @@ We first used 2 components of the PCA output and ran the following algorithms
 \end_layout
 
 \begin_layout Subsubsection
+
+\bar under
 Naive Bayes
 \end_layout
 
@@ -761,18 +763,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.96378, Accuracy = 0.96398
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.96378, Accuracy = 0.96398 
 \end_layout
 
 \begin_layout Standard
@@ -1226,18 +1248,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.96523, Accuracy = 0.9654 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.96523, Accuracy = 0.9654 
 \end_layout
 
 \begin_layout Standard
@@ -1298,6 +1340,8 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
+
+\bar under
 Bayes (multivariate gaussian as ccd)
 \end_layout
 
@@ -1701,18 +1745,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97049, Accuracy = 0.9707 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97049, Accuracy = 0.9707 
 \end_layout
 
 \begin_layout Standard
@@ -2166,18 +2230,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97064, Accuracy = 0.97083 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97064, Accuracy = 0.97083 
 \end_layout
 
 \begin_layout Standard
@@ -2238,6 +2322,8 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
+
+\bar under
 Bayes (GMM as ccd)
 \end_layout
 
@@ -2362,7 +2448,7 @@ class
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 Precision
 \end_layout
 
@@ -2371,7 +2457,7 @@ Precision
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 Recall
 \end_layout
 
@@ -2380,7 +2466,7 @@ Recall
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 F1
 \end_layout
 
@@ -2409,7 +2495,7 @@ AbdomenCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.99687
 \end_layout
 
@@ -2418,7 +2504,7 @@ AbdomenCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.98758
 \end_layout
 
@@ -2427,7 +2513,7 @@ AbdomenCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.9922
 \end_layout
 
@@ -2456,7 +2542,7 @@ BreastMRI
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.94326
 \end_layout
 
@@ -2465,7 +2551,7 @@ BreastMRI
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.98155
 \end_layout
 
@@ -2474,7 +2560,7 @@ BreastMRI
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.96202
 \end_layout
 
@@ -2503,7 +2589,7 @@ ChestCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.98762
 \end_layout
 
@@ -2512,7 +2598,7 @@ ChestCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 1.0
 \end_layout
 
@@ -2521,7 +2607,7 @@ ChestCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.99377
 \end_layout
 
@@ -2550,7 +2636,7 @@ CXR
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.96238
 \end_layout
 
@@ -2559,7 +2645,7 @@ CXR
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.98397
 \end_layout
 
@@ -2568,7 +2654,7 @@ CXR
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.97306
 \end_layout
 
@@ -2597,7 +2683,7 @@ Hand
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.98142
 \end_layout
 
@@ -2606,7 +2692,7 @@ Hand
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.93787
 \end_layout
 
@@ -2615,7 +2701,7 @@ Hand
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.95915
 \end_layout
 
@@ -2644,7 +2730,7 @@ HeadCT
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.95625
 \end_layout
 
@@ -2653,7 +2739,7 @@ HeadCT
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.94444
 \end_layout
 
@@ -2662,7 +2748,7 @@ HeadCT
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout 
+\begin_layout Plain Layout
 0.95031
 \end_layout
 
@@ -2687,18 +2773,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97049, Accuracy = 0.9707 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97049, Accuracy = 0.9707 
 \end_layout
 
 \begin_layout Standard
@@ -3151,18 +3257,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97064, Accuracy = 0.97083 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97064, Accuracy = 0.97083 
 \end_layout
 
 \begin_layout Standard
@@ -3222,6 +3348,8 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
+
+\bar under
 Parzen Window
 \end_layout
 
@@ -3739,18 +3867,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.9809, Accuracy = 0.9809 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.9809, Accuracy = 0.9809
 \end_layout
 
 \begin_layout Standard
@@ -3879,7 +4027,7 @@ class
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 Precision
 \end_layout
 
@@ -3888,7 +4036,7 @@ Precision
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 Recall
 \end_layout
 
@@ -3897,7 +4045,7 @@ Recall
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 F1
 \end_layout
 
@@ -3926,7 +4074,7 @@ AbdomenCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.98521
 \end_layout
 
@@ -3935,7 +4083,7 @@ AbdomenCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.97654
 \end_layout
 
@@ -3944,7 +4092,7 @@ AbdomenCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.98086
 \end_layout
 
@@ -3973,7 +4121,7 @@ BreastMRI
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.9965
 \end_layout
 
@@ -3982,7 +4130,7 @@ BreastMRI
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.97603
 \end_layout
 
@@ -3991,7 +4139,7 @@ BreastMRI
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.98616
 \end_layout
 
@@ -4020,7 +4168,7 @@ ChestCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.97605
 \end_layout
 
@@ -4029,7 +4177,7 @@ ChestCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 1.0
 \end_layout
 
@@ -4038,7 +4186,7 @@ ChestCT
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.98788
 \end_layout
 
@@ -4067,7 +4215,7 @@ CXR
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.95988
 \end_layout
 
@@ -4076,7 +4224,7 @@ CXR
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.98107
 \end_layout
 
@@ -4085,7 +4233,7 @@ CXR
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.97036
 \end_layout
 
@@ -4114,7 +4262,7 @@ Hand
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.98006
 \end_layout
 
@@ -4123,7 +4271,7 @@ Hand
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.92973
 \end_layout
 
@@ -4132,7 +4280,7 @@ Hand
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.95423
 \end_layout
 
@@ -4161,7 +4309,7 @@ HeadCT
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.9564
 \end_layout
 
@@ -4170,7 +4318,7 @@ HeadCT
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.99153
 \end_layout
 
@@ -4179,7 +4327,7 @@ HeadCT
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Definition
+\begin_layout Plain Layout
 0.97365
 \end_layout
 
@@ -4204,13 +4352,37 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97552, Accuracy = 0.975 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
+
 
 \end_layout
 
@@ -4680,18 +4852,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.99244, Accuracy = 0.9925 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.99244, Accuracy = 0.9925
 \end_layout
 
 \begin_layout Standard
@@ -5145,18 +5337,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97379, Accuracy = 0.974 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97379, Accuracy = 0.974
 \end_layout
 
 \begin_layout Standard
@@ -5217,7 +5429,1029 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
+
+\bar under
 K Nearest Neighbours
+\end_layout
+
+\begin_layout Standard
+KNN Algorithm was implemented.
+ Here we present the results, when we use norm 2 as the distance metric
+ in knn
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Training, validation error curves
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/Medical_knn_norm2_biasvar.jpeg
+	lyxscale 20
+	width 45col%
+	height 45col%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Train/Test error vs increase in number of gaussians in GMM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We find that modelling all ccd's as a single gaussian produce the lowest
+ validation error.
+ We cross validate and then test our algorithm after modelling all ccd's
+ using 1 gaussian and get the following stats
+\end_layout
+
+\begin_layout Standard
+Training Data Stats
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+class
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Precision
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recall
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AbdomenCT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99567
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99245
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99406
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BreastMRI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99448
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9842
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.98931
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ChestCT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99125
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99561
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CXR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.97366
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.98876
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.98115
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hand
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.98462
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.93305
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.95814
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HeadCT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.95223
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99028
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.97088
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.98032, Accuracy = 0.98155 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/Medical_gmm_confmat_train.jpeg
+	lyxscale 20
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Testing Data Stats
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+class
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Precision
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recall
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AbdomenCT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99251
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99144
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99197
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BreastMRI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99576
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.98443
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99006
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ChestCT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9883
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.99412
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CXR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.97057
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9816
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.97605
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hand
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.97942
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.93471
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.95654
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HeadCT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.95708
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.98984
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.97318
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.98032, Accuracy = 0.98018 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/Medical_naive_confmat_test.jpeg
+	lyxscale 20
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -5516,7 +6750,7 @@ KNN
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.97891
 \end_layout
 
 \end_inset
@@ -5525,7 +6759,7 @@ KNN
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.9812
 \end_layout
 
 \end_inset
@@ -5534,7 +6768,7 @@ KNN
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.98018
 \end_layout
 
 \end_inset
@@ -5543,7 +6777,7 @@ KNN
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.98155
 \end_layout
 
 \end_inset
@@ -5563,7 +6797,7 @@ Parzen (Hypercube Window)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.97309
 \end_layout
 
 \end_inset
@@ -5572,7 +6806,7 @@ Parzen (Hypercube Window)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.98441
 \end_layout
 
 \end_inset
@@ -5610,7 +6844,7 @@ Parzen (Gaussian Window)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.9748
 \end_layout
 
 \end_inset
@@ -5619,7 +6853,7 @@ Parzen (Gaussian Window)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.9924
 \end_layout
 
 \end_inset
@@ -5761,7 +6995,7 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Observations
+Observations and Inferences
 \end_layout
 
 \begin_layout Section

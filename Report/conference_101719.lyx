@@ -763,18 +763,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.96378, Accuracy = 0.96398
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.96378, Accuracy = 0.96398 
 \end_layout
 
 \begin_layout Standard
@@ -855,7 +875,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -1228,18 +1248,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.96523, Accuracy = 0.9654 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.96523, Accuracy = 0.9654 
 \end_layout
 
 \begin_layout Standard
@@ -1332,7 +1372,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -1705,18 +1745,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97049, Accuracy = 0.9707 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97049, Accuracy = 0.9707 
 \end_layout
 
 \begin_layout Standard
@@ -1797,7 +1857,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -2170,18 +2230,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97064, Accuracy = 0.97083 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97064, Accuracy = 0.97083 
 \end_layout
 
 \begin_layout Standard
@@ -2693,18 +2773,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97049, Accuracy = 0.9707 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97049, Accuracy = 0.9707 
 \end_layout
 
 \begin_layout Standard
@@ -3157,18 +3257,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97064, Accuracy = 0.97083 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97064, Accuracy = 0.97083 
 \end_layout
 
 \begin_layout Standard
@@ -3747,18 +3867,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.9809, Accuracy = 0.9809 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.9809, Accuracy = 0.9809
 \end_layout
 
 \begin_layout Standard
@@ -4212,13 +4352,37 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97552, Accuracy = 0.975 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
+
 
 \end_layout
 
@@ -4688,18 +4852,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.99244, Accuracy = 0.9925 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.99244, Accuracy = 0.9925
 \end_layout
 
 \begin_layout Standard
@@ -5153,18 +5337,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.97379, Accuracy = 0.974 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.97379, Accuracy = 0.974
 \end_layout
 
 \begin_layout Standard
@@ -5246,7 +5450,7 @@ Training, validation error curves
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5676,18 +5880,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.98032, Accuracy = 0.98155 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.98032, Accuracy = 0.98155
 \end_layout
 
 \begin_layout Standard
@@ -6140,18 +6364,38 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Macro F1 = 0.98032, Accuracy = 0.98018 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\SpecialChar allowbreak
+\end_inset
 
-\end_layout
 
-\begin_layout Standard
-Macro F1 = 0.98032, Accuracy = 0.98018 
 \end_layout
 
 \begin_layout Standard
@@ -6553,7 +6797,7 @@ Parzen (Hypercube Window)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.97309
 \end_layout
 
 \end_inset
@@ -6562,7 +6806,7 @@ Parzen (Hypercube Window)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.98441
 \end_layout
 
 \end_inset
@@ -6751,7 +6995,7 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Observations
+Observations and Inferences
 \end_layout
 
 \begin_layout Section
