@@ -147,7 +147,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/Medical_pca.jpeg
+	filename plots/health_pca.jpeg
 	lyxscale 10
 	width 45col%
 	height 45col%
@@ -180,7 +180,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/medical_tSNE_5000datapoints.png
+	filename plots/health_visualization_3D.png
 	lyxscale 10
 	width 45col%
 	height 45col%
@@ -205,8 +205,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-a) 2D visualization of PCA (2 component scatterplot) b)2D visualization
- of tSNE for 10k of 50k training datapoints (2 component scatterplot)
+a) 2D visualization of PCA (2 component scatterplot) b)3D visualization
+ of original health data
 \end_layout
 
 \end_inset
@@ -217,6 +217,47 @@ a) 2D visualization of PCA (2 component scatterplot) b)2D visualization
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Its useful to note that the first component of PCA itself explains 90 percent
+ of the variance
+\end_layout
+
+\begin_layout Subsection
+Experiements
+\end_layout
+
+\begin_layout Standard
+We implemented Naive Bayes, Bayes using gaussian ccd, Bayes using GMM as
+ ccd, Parzen window, kNN, Logistic regression algorithms.
+ Folowing are some implementation details and hyperparameter tuning information
+ for some of these.
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+Bayes (GMM as ccd)
+\series medium
+\bar default
+:For bayes classification threshold = 1, Optimal values of hyperparameter
+ of the number of gaussians was found using the bias variance curves shown
+ below.
+ We find that number of gaussians = produce the lowest validation error
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+Parzen Window
+\series medium
+\bar default
+:The optimal value of the hypercube length was found to be h = 28.The bias
+ variance curve from which we obtain this is as follows
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -230,11 +271,10 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/Medical_var_vs_pcacomponents.jpeg
-	lyxscale 20
+	filename plots/health_pca.jpeg
+	lyxscale 10
 	width 45col%
 	height 45col%
-	keepAspectRatio
 
 \end_inset
 
@@ -264,11 +304,10 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/Medical_var_vs_pcacomponents.jpeg
-	lyxscale 20
+	filename plots/health_visualization_3D.png
+	lyxscale 10
 	width 45col%
 	height 45col%
-	keepAspectRatio
 
 \end_inset
 
@@ -287,13 +326,312 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-a) cumulative amount of variance explained vs number of pca components b)
+a) 2D visualization of PCA (2 component scatterplot) b)3D visualization
+ of original health data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+K Nearest Neighbours
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+Logistic Regressor
+\end_layout
+
+\begin_layout Subsection
+Results of Experiments
+\end_layout
+
+\begin_layout Standard
+The AUC of all algorithms are stated.
+ ROC's for all algorithms are made on a single plot.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Algorithm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AUC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Naive Bayes with Gaussian ccd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9541
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bayes with Gaussian ccd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.95014
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bayes with GMM ccd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.93168
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+KNN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.93192
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parzen (Hypercube Window)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.92782
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Multinomial Logistic Regression
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/health_ROCALL.jpeg
+	lyxscale 70
+	width 60col%
+	height 60col%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ROC curev for all algorithms
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -307,15 +645,7 @@ a) cumulative amount of variance explained vs number of pca components b)
 \end_layout
 
 \begin_layout Subsection
-Experiements
-\end_layout
-
-\begin_layout Subsection
-Observations
-\end_layout
-
-\begin_layout Subsection
-conclusions
+Observations and Inference
 \end_layout
 
 \begin_layout Section
@@ -323,15 +653,15 @@ Weather Data Question 2 - Regression
 \end_layout
 
 \begin_layout Subsection
+Visualization
+\end_layout
+
+\begin_layout Subsection
 Experiements
 \end_layout
 
 \begin_layout Subsection
-Observations
-\end_layout
-
-\begin_layout Subsection
-conclusions
+Observations and Inference
 \end_layout
 
 \begin_layout Section
@@ -3489,7 +3819,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_naive_confmat_test.jpeg
+	filename plots/Medical_gmm_confmat_test.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
@@ -5080,11 +5410,10 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_bayes_confmat_train.jpeg
+	filename plots/Medical_parzengaussian_confmat_train.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
-	keepAspectRatio
 
 \end_inset
 
@@ -5565,11 +5894,10 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_bayes_confmat_test.jpeg
+	filename plots/Medical_parzengaussian_confmat_test.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
-	keepAspectRatio
 
 \end_inset
 
@@ -6108,7 +6436,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_gmm_confmat_train.jpeg
+	filename plots/Medical_knn_norm2_confmat_train.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
@@ -6592,7 +6920,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_naive_confmat_test.jpeg
+	filename plots/Medical_knn_norm2_confmat_test.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
@@ -6648,7 +6976,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
