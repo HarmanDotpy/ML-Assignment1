@@ -130,6 +130,183 @@ Health Data Question 1 - Binary Classification
 \end_layout
 
 \begin_layout Subsection
+Visualization
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/Medical_pca.jpeg
+	lyxscale 10
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/medical_tSNE_5000datapoints.png
+	lyxscale 10
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+a) 2D visualization of PCA (2 component scatterplot) b)2D visualization
+ of tSNE for 10k of 50k training datapoints (2 component scatterplot)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/Medical_var_vs_pcacomponents.jpeg
+	lyxscale 20
+	width 45col%
+	height 45col%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/Medical_var_vs_pcacomponents.jpeg
+	lyxscale 20
+	width 45col%
+	height 45col%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+a) cumulative amount of variance explained vs number of pca components b)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Experiements
 \end_layout
 
@@ -3312,7 +3489,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_naive_confmat_test.jpeg
+	filename plots/Medical_gmm_confmat_test.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
@@ -4387,10 +4564,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-Macro F1 = 0.97552, Accuracy = 0.975
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4907,11 +5080,10 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_bayes_confmat_train.jpeg
+	filename plots/Medical_parzengaussian_confmat_train.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
-	keepAspectRatio
 
 \end_inset
 
@@ -5392,11 +5564,10 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_bayes_confmat_test.jpeg
+	filename plots/Medical_parzengaussian_confmat_test.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
-	keepAspectRatio
 
 \end_inset
 
@@ -5935,7 +6106,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_gmm_confmat_train.jpeg
+	filename plots/Medical_knn_norm2_confmat_train.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
@@ -6419,7 +6590,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename plots/Medical_naive_confmat_test.jpeg
+	filename plots/Medical_knn_norm2_confmat_test.jpeg
 	lyxscale 20
 	width 45col%
 	height 45col%
