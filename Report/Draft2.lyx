@@ -14,6 +14,7 @@
 \usepackage{xcolor}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\newcommand{\squeezeup}{\vspace{-2.5mm}}
 \end_preamble
 \options conference
 \use_default_options false
@@ -112,17 +113,7 @@ and
 
 \begin_layout Abstract
 This report contains all the experiments, observations, graphs and results
- for the Assignment 1 of ELL409.
- To the best of our knowledge, we have implemented all algorithms discussed
- in class, for all the given datasets.
-\end_layout
-
-\begin_layout Section
-Introduction
-\end_layout
-
-\begin_layout Standard
-Introduction of the assignment
+ for the Assignment 1 of ELL409, for all the given datasets.
 \end_layout
 
 \begin_layout Section
@@ -225,23 +216,33 @@ Its useful to note that the first component of PCA itself explains 90 percent
 \end_layout
 
 \begin_layout Subsection
-Experiements
+Important/ Interesting Experiments
 \end_layout
 
 \begin_layout Standard
-We implemented Naive Bayes, Bayes using gaussian ccd, Bayes using GMM as
- ccd, Parzen window, kNN, Logistic regression algorithms.
+We implemented 
+\bar under
+Naive Bayes, Bayes using gaussian ccd, Bayes using GMM as ccd, Parzen window,
+ kNN, Logistic regression algorithms
+\bar default
+.
  Folowing are some implementation details and hyperparameter tuning information
- for some of these.
+ for some of these algorithms.
 \end_layout
 
 \begin_layout Subsubsection
 
 \bar under
-Bayes (GMM as ccd)
+Hyperparameter tuning for Bayes (GMM as ccd)
 \series medium
 \bar default
-:For bayes classification threshold = 1, Optimal values of hyperparameter
+:
+\end_layout
+
+\begin_layout Standard
+
+\series medium
+For bayes classification threshold = 1, Optimal values of hyperparameter
  of the number of gaussians was found using the bias variance curves shown
  below.
  We find that number of gaussians = produce the lowest validation error
@@ -250,15 +251,39 @@ Bayes (GMM as ccd)
 \begin_layout Subsubsection
 
 \bar under
-Parzen Window
+Parzen window
 \series medium
 \bar default
-:The optimal value of the hypercube length was found to be h = 28.The bias
- variance curve from which we obtain this is as follows
+:
+\end_layout
+
+\begin_layout Standard
+
+\series medium
+The optimal value of the hypercube length was found to be h = 28 for parzen
+ window for classification threshold.
+ The bias variance curves are plotted as shown below
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+K Nearest Neighbours
+\series medium
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+
+\series medium
+The optimal value of k was found to be k = 32 for classification threshold
+ = 1.The bias variance curve for both these algorithms are shown below.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -271,10 +296,11 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/health_pca.jpeg
+	filename plots/health_parzen_hypercube_biasvar.jpeg
 	lyxscale 10
 	width 45col%
 	height 45col%
+	keepAspectRatio
 
 \end_inset
 
@@ -304,10 +330,11 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/health_visualization_3D.png
+	filename plots/health_knn_norm2_biasvar.jpeg
 	lyxscale 10
 	width 45col%
 	height 45col%
+	keepAspectRatio
 
 \end_inset
 
@@ -329,8 +356,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-a) 2D visualization of PCA (2 component scatterplot) b)3D visualization
- of original health data
+Bias Variance curves @classification threshold = 1 for a) Parzen Window
+ b)KNN algorithms
 \end_layout
 
 \end_inset
@@ -343,16 +370,11 @@ a) 2D visualization of PCA (2 component scatterplot) b)3D visualization
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+\begin_inset VSpace -7cm
+\end_inset
 
-\bar under
-K Nearest Neighbours
-\end_layout
 
-\begin_layout Subsubsection
-
-\bar under
-Logistic Regressor
 \end_layout
 
 \begin_layout Subsection
@@ -365,40 +387,6 @@ The AUC of all algorithms are stated.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centerline{
-\backslash
-tiny{
-\end_layout
-
-\end_inset
-
-
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="2">
 <features tabularvalignment="middle">
@@ -529,7 +517,7 @@ Parzen (Hypercube Window)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Multinomial Logistic Regression
+Logistic Regression
 \end_layout
 
 \end_inset
@@ -569,12 +557,356 @@ Multinomial Logistic Regression
 \end_inset
 
 
-\begin_inset ERT
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/health_ROCALL.jpeg
+	lyxscale 70
+	width 60col%
+	height 60col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ROC curve for all algorithms
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Observations and Inference
+\end_layout
+
+\begin_layout Itemize
+The first principal component of the data explains 90 percent of the variance.
+\end_layout
+
+\begin_layout Itemize
+We see that almost all algorithms- Naive Bayes, Bayes with different ccd's
+ and KNN,Parzn give competitive performance and have almost similar ROC
+ curves.
+\end_layout
+
+\begin_layout Itemize
+Curves obtained for bias variance decompostion (represented as train/validation
+ error vs the change in hyperparameters) follow theoretical trends.
+ This helped us to get optimal values of hyperparameters for knn (value
+ of k), parzen (value of window length), gaussian (number of gaussians).
+\end_layout
+
+\begin_layout Itemize
+As we know, a classifier for heart disease should have 
+\series bold
+low FALSE NEGATIVES 
+\series default
+otherwise more and more people will be at a risk, hence an optimal high
+ bayes classifier threshold can be set for this.
+ Some fo the thresholds are explored in the Appendix
+\end_layout
+
+\begin_layout Itemize
+It was also interesting to see that the PCA scatter plot of of first 2 component
+s is close to linearly separable and hence we can expect a classifier like
+ perceptron or SVM to do well on the pca output.
+\end_layout
+
+\begin_layout Section
+Weather Data Question 2 - Regression
+\end_layout
+
+\begin_layout Subsection
+Visualization
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/health_pca.jpeg
+	lyxscale 10
+	width 45col%
+	height 45col%
 
-}}
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/health_visualization_3D.png
+	lyxscale 10
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+a) 2D visualization of PCA (2 component scatterplot) b)3D visualization
+ of original health data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Important/ Interesting Experiments and Results
+\end_layout
+
+\begin_layout Standard
+We implement Linear regression using MSE, MAE as loss functions as try out
+ different regularizers, L1, L2, elastic net.
+ Some of the interesting results are as follows.
+ We also apply Polynomial models for visualizing the overfitting taking
+ place and find the ideal polnomial degree.
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+Weights Learnt:
+\series medium
+\bar default
+We have 7 features (including augmentation in x) and hence we have to learn
+ 7 weights.
+ These are plotted to visualize what is being learnt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/weather_MSE_Wplot.jpeg
+	lyxscale 10
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/weather_MAE_Wplot.jpeg
+	lyxscale 10
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Plot depicting the 7 learnt weights using a)MSE loss, b)MAE loss 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\bar under
+Polynomia
+\bar default
+:
+\series medium
+Polynomial degree 2 was found to be ideal after which the train and test
+ error increase.
+ This can be visualized from the following plots.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/weatherpoly_1d.jpeg
+	lyxscale 10
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/weatherpoly_2d.png
+	lyxscale 10
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -586,34 +918,57 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
+\begin_inset Graphics
+	filename plots/weatherpoly_4d.png
+	lyxscale 10
+	width 45col%
+	height 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
-
-\backslash
-centerline{
 \end_layout
 
 \end_inset
 
 
-\begin_inset Graphics
-	filename plots/health_ROCALL.jpeg
-	lyxscale 70
-	width 60col%
-	height 60col%
+\end_layout
 
 \end_inset
 
 
-\begin_inset ERT
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/weather_poly_bias_variance.png
+	lyxscale 10
+	width 45col%
+	height 45col%
 
-}
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -622,22 +977,257 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-ROC curev for all algorithms
+Y actual vs Y predicted for a)1 degree b)2 degree c)3 degree polynomial.d)
+ shows the bias variance curves (with some discrepancy as described in results)
 \end_layout
 
 \end_inset
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Algorithm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Train error (RMSE)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Test erro (RMSE)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+comments
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MSE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 
 \end_layout
 
 \end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
+\begin_layout Plain Layout
 
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+no overfitting
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MAE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+no overfitting
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Polynomia 2 Degree, MSE loss
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+lowest validation error among polynomials
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+KNN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parzen (Hypercube Window)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -648,20 +1238,24 @@ ROC curev for all algorithms
 Observations and Inference
 \end_layout
 
-\begin_layout Section
-Weather Data Question 2 - Regression
+\begin_layout Itemize
+Transfomring the data using polynomial of degree 2 (ie having just features
+ and their squares) gives the best results.
+ From the y_predicted y_true graph we see that almost all predicted points
+ are very close to actual points suggesting a nearly exact fit.
+ 
 \end_layout
 
-\begin_layout Subsection
-Visualization
+\begin_layout Itemize
+We observe that there is no overfitting when using MSE, MAE on raw data
+ itself.
+ overfitting only happens when we use a polynomial of degree>2
 \end_layout
 
-\begin_layout Subsection
-Experiements
-\end_layout
-
-\begin_layout Subsection
-Observations and Inference
+\begin_layout Itemize
+The bias variance curve shows an increase in train error after a point.
+ That is an artifact of overflow and error accumulation when calculating
+ powers for generating higher degree polynomial.
 \end_layout
 
 \begin_layout Section
@@ -7495,1117 +8089,8 @@ status open
 
 \end_layout
 
-\begin_layout Subsection
-Observations and Inferences
-\end_layout
-
 \begin_layout Section
 Learnings
-\end_layout
-
-\begin_layout Section
-Prepare Your Paper Before Styling
-\end_layout
-
-\begin_layout Standard
-Before you begin to format your paper, first write and save the content
- as a separate text file.
- Complete all content and organizational editing before formatting.
- Please note sections 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "AA"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-–
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "SCM"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- below for more information on proofreading, spelling and grammar.
-\end_layout
-
-\begin_layout Standard
-Keep your text and graphic files separate until after the text has been
- formatted and styled.
- Do not number text heads—
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-\SpecialChar LaTeX
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- will do that for you.
-\end_layout
-
-\begin_layout Subsection
-Abbreviations and Acronyms
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "AA"
-
-\end_inset
-
- Define abbreviations and acronyms the first time they are used in the text,
- even after they have been defined in the abstract.
- Abbreviations such as IEEE, SI, MKS, CGS, ac, dc, and rms do not have to
- be defined.
- Do not use abbreviations in the title or heads unless they are unavoidable.
-\end_layout
-
-\begin_layout Subsection
-Units
-\end_layout
-
-\begin_layout Itemize
-Use either SI (MKS) or CGS as primary units.
- (SI units are encouraged.) English units may be used as secondary units
- (in parentheses).
- An exception would be the use of English units as identifiers in trade,
- such as 
-\begin_inset Quotes eld
-\end_inset
-
-3.5-inch disk drive
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-Avoid combining SI and CGS units, such as current in amperes and magnetic
- field in oersteds.
- This often leads to confusion because equations do not balance dimensionally.
- If you must use mixed units, clearly state the units for each quantity
- that you use in an equation.
- 
-\end_layout
-
-\begin_layout Itemize
-Do not mix complete spellings and abbreviations of units: 
-\begin_inset Quotes eld
-\end_inset
-
-Wb/m
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-webers per square meter
-\begin_inset Quotes erd
-\end_inset
-
-, not 
-\begin_inset Quotes eld
-\end_inset
-
-webers/m
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-.
- Spell out units when they appear in text: 
-\begin_inset Quotes eld
-\end_inset
-
-.
- .
- .
- a few henries
-\begin_inset Quotes erd
-\end_inset
-
-, not 
-\begin_inset Quotes eld
-\end_inset
-
-.
- .
- .
- a few H
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-Use a zero before decimal points: 
-\begin_inset Quotes eld
-\end_inset
-
-0.25
-\begin_inset Quotes erd
-\end_inset
-
-, not 
-\begin_inset Quotes eld
-\end_inset
-
-.25
-\begin_inset Quotes erd
-\end_inset
-
-.
- Use 
-\begin_inset Quotes eld
-\end_inset
-
-cm
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-3
-\end_layout
-
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-, not 
-\begin_inset Quotes eld
-\end_inset
-
-cc
-\begin_inset Quotes erd
-\end_inset
-
-.) 
-\end_layout
-
-\begin_layout Subsection
-Equations
-\end_layout
-
-\begin_layout Standard
-Number equations consecutively.
- To make your equations more compact, you may use the solidus (
-\begin_inset space ~
-\end_inset
-
-/
-\begin_inset space ~
-\end_inset
-
-), the exp function, or appropriate exponents.
- Italicize Roman symbols for quantities and variables, but not Greek symbols.
- Use a long dash rather than a hyphen for a minus sign.
- Punctuate equations with commas or periods when they are part of a sentence,
- as in: 
-\begin_inset Formula 
-\begin{equation}
-a+b=\gamma\label{eq}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Be sure that the symbols in your equation have been defined before or immediatel
-y following the equation.
- Use 
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-, not 
-\begin_inset Quotes eld
-\end_inset
-
-Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-equation 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-, except at the beginning of a sentence: 
-\begin_inset Quotes eld
-\end_inset
-
-Equation 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is .
- .
- .
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\SpecialChar LaTeX
--Specific Advice
-\end_layout
-
-\begin_layout Standard
-Please use 
-\begin_inset Quotes eld
-\end_inset
-
-soft
-\begin_inset Quotes erd
-\end_inset
-
- (e.g., 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|
-\backslash
-eqref{Eq}|
-\end_layout
-
-\end_inset
-
-) cross references instead of 
-\begin_inset Quotes eld
-\end_inset
-
-hard
-\begin_inset Quotes erd
-\end_inset
-
- references (e.g., 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|(1)|
-\end_layout
-
-\end_inset
-
-).
- That will make it possible to combine sections, add equations, or change
- the order of figures or citations without having to go through the file
- line by line.
-\end_layout
-
-\begin_layout Standard
-Please don't use the 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|{eqnarray}|
-\end_layout
-
-\end_inset
-
- equation environment.
- Use 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|{align}|
-\end_layout
-
-\end_inset
-
- or 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|{IEEEeqnarray}|
-\end_layout
-
-\end_inset
-
- instead.
- The 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|{eqnarray}|
-\end_layout
-
-\end_inset
-
- environment leaves unsightly spaces around relation symbols.
-\end_layout
-
-\begin_layout Standard
-Please note that the 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|{subequations}|
-\end_layout
-
-\end_inset
-
- environment in 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-\SpecialChar LaTeX
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- will increment the main equation counter even when there are no equation
- numbers displayed.
- If you forget that, you might write an article in which the equation numbers
- skip from (17) to (20), causing the copy editors to wonder if you've discovered
- a new method of counting.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-BibTeX
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- does not work by magic.
- It doesn't get the bibliographic data from thin air but from .bib files.
- If you use 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-BibTeX
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- to produce a bibliography you must send the .bib files.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-\SpecialChar LaTeX
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- can't read your mind.
- If you assign the same label to a subsubsection and a table, you might
- find that Table I has been cross referenced as Table IV-B3.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-\SpecialChar LaTeX
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- does not have precognitive abilities.
- If you put a 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|
-\backslash
-label|
-\end_layout
-
-\end_inset
-
- command before the command that updates the counter it's supposed to be
- using, the label will pick up the last counter to be cross referenced instead.
- In particular, a 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|
-\backslash
-label|
-\end_layout
-
-\end_inset
-
- command should not go before the caption of a figure or a table.
-\end_layout
-
-\begin_layout Standard
-Do not use 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|
-\backslash
-nonumber|
-\end_layout
-
-\end_inset
-
- inside the 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|{array}|
-\end_layout
-
-\end_inset
-
- environment.
- It will not stop equation numbers inside 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|{array}|
-\end_layout
-
-\end_inset
-
- (there won't be any anyway) and it might stop a wanted equation number
- in the surrounding equation.
-\end_layout
-
-\begin_layout Subsection
-Some Common Mistakes
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "SCM"
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Itemize
-The word 
-\begin_inset Quotes eld
-\end_inset
-
-data
-\begin_inset Quotes erd
-\end_inset
-
- is plural, not singular.
- 
-\end_layout
-
-\begin_layout Itemize
-The subscript for the permeability of vacuum 
-\begin_inset Formula $\mu_{0}$
-\end_inset
-
-, and other common scientific constants, is zero with subscript formatting,
- not a lowercase letter 
-\begin_inset Quotes eld
-\end_inset
-
-o
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-In American English, commas, semicolons, periods, question and exclamation
- marks are located within quotation marks only when a complete thought or
- name is cited, such as a title or full quotation.
- When quotation marks are used, instead of a bold or italic typeface, to
- highlight a word or phrase, punctuation should appear outside of the quotation
- marks.
- A parenthetical phrase or statement at the end of a sentence is punctuated
- outside of the closing parenthesis (like this).
- (A parenthetical sentence is punctuated within the parentheses.) 
-\end_layout
-
-\begin_layout Itemize
-A graph within a graph is an 
-\begin_inset Quotes eld
-\end_inset
-
-inset
-\begin_inset Quotes erd
-\end_inset
-
-, not an 
-\begin_inset Quotes eld
-\end_inset
-
-insert
-\begin_inset Quotes erd
-\end_inset
-
-.
- The word alternatively is preferred to the word 
-\begin_inset Quotes eld
-\end_inset
-
-alternately
-\begin_inset Quotes erd
-\end_inset
-
- (unless you really mean something that alternates).
- 
-\end_layout
-
-\begin_layout Itemize
-Do not use the word 
-\begin_inset Quotes eld
-\end_inset
-
-essentially
-\begin_inset Quotes erd
-\end_inset
-
- to mean 
-\begin_inset Quotes eld
-\end_inset
-
-approximately
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-effectively
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-In your paper title, if the words 
-\begin_inset Quotes eld
-\end_inset
-
-that uses
-\begin_inset Quotes erd
-\end_inset
-
- can accurately replace the word 
-\begin_inset Quotes eld
-\end_inset
-
-using
-\begin_inset Quotes erd
-\end_inset
-
-, capitalize the 
-\begin_inset Quotes eld
-\end_inset
-
-u
-\begin_inset Quotes erd
-\end_inset
-
-; if not, keep using lower-cased.
- 
-\end_layout
-
-\begin_layout Itemize
-Be aware of the different meanings of the homophones 
-\begin_inset Quotes eld
-\end_inset
-
-affect
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-effect
-\begin_inset Quotes erd
-\end_inset
-
-, 
-\begin_inset Quotes eld
-\end_inset
-
-complement
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-compliment
-\begin_inset Quotes erd
-\end_inset
-
-, 
-\begin_inset Quotes eld
-\end_inset
-
-discreet
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-discrete
-\begin_inset Quotes erd
-\end_inset
-
-, 
-\begin_inset Quotes eld
-\end_inset
-
-principal
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-principle
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-Do not confuse 
-\begin_inset Quotes eld
-\end_inset
-
-imply
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-infer
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-The prefix 
-\begin_inset Quotes eld
-\end_inset
-
-non
-\begin_inset Quotes erd
-\end_inset
-
- is not a word; it should be joined to the word it modifies, usually without
- a hyphen.
- 
-\end_layout
-
-\begin_layout Itemize
-There is no period after the 
-\begin_inset Quotes eld
-\end_inset
-
-et
-\begin_inset Quotes erd
-\end_inset
-
- in the Latin abbreviation 
-\begin_inset Quotes eld
-\end_inset
-
-et al.
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-The abbreviation 
-\begin_inset Quotes eld
-\end_inset
-
-i.e.
-\begin_inset Quotes erd
-\end_inset
-
- means 
-\begin_inset Quotes eld
-\end_inset
-
-that is
-\begin_inset Quotes erd
-\end_inset
-
-, and the abbreviation 
-\begin_inset Quotes eld
-\end_inset
-
-e.g.
-\begin_inset Quotes erd
-\end_inset
-
- means 
-\begin_inset Quotes eld
-\end_inset
-
-for example
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-An excellent style manual for science writers is 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "b7"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-Authors and Affiliations
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-The class file is designed for, but not limited to, six authors.
-
-\series default
- A minimum of one author is required for all conference articles.
- Author names should be listed starting from left to right and then moving
- down to the next line.
- This is the author sequence that will be used in future citations and by
- indexing services.
- Names should not be listed in columns nor group by affiliation.
- Please keep your affiliations as succinct as possible (for example, do
- not differentiate among departments of the same organization).
-\end_layout
-
-\begin_layout Subsection
-Identify the Headings
-\end_layout
-
-\begin_layout Standard
-Headings, or heads, are organizational devices that guide the reader through
- your paper.
- There are two types: component heads and text heads.
-\end_layout
-
-\begin_layout Standard
-Component heads identify the different components of your paper and are
- not topically subordinate to each other.
- Examples include Acknowledgments and References and, for these, the correct
- style to use is 
-\begin_inset Quotes eld
-\end_inset
-
-Heading 5
-\begin_inset Quotes erd
-\end_inset
-
-.
- Use 
-\begin_inset Quotes eld
-\end_inset
-
-figure caption
-\begin_inset Quotes erd
-\end_inset
-
- for your Figure captions, and 
-\begin_inset Quotes eld
-\end_inset
-
-table head
-\begin_inset Quotes erd
-\end_inset
-
- for your table title.
- Run-in heads, such as 
-\begin_inset Quotes eld
-\end_inset
-
-Abstract
-\begin_inset Quotes erd
-\end_inset
-
-, will require you to apply a style (in this case, italic) in addition to
- the style provided by the drop down menu to differentiate the head from
- the text.
-\end_layout
-
-\begin_layout Standard
-Text heads organize the topics on a relational, hierarchical basis.
- For example, the paper title is the primary text head because all subsequent
- material relates and elaborates on this one topic.
- If there are two or more sub-topics, the next level head (uppercase Roman
- numerals) should be used and, conversely, if there are not at least two
- sub-topics, then no subheads should be introduced.
 \end_layout
 
 \begin_layout Subsection
