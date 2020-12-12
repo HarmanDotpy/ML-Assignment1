@@ -1062,7 +1062,7 @@ Train MSE
 \begin_inset Text
 
 \begin_layout Plain Layout
-Test RMSE
+Test MSE
 \end_layout
 
 \end_inset
@@ -1082,7 +1082,7 @@ PseudoInverse method
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2.6456
 \end_layout
 
 \end_inset
@@ -1091,7 +1091,7 @@ PseudoInverse method
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4.4545
 \end_layout
 
 \end_inset
@@ -1111,7 +1111,7 @@ linear reg - MSE loss
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2.645
 \end_layout
 
 \end_inset
@@ -1120,7 +1120,7 @@ linear reg - MSE loss
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4.4494
 \end_layout
 
 \end_inset
@@ -1131,7 +1131,7 @@ linear reg - MSE loss
 \begin_inset Text
 
 \begin_layout Plain Layout
-MSE-L1 reg
+MSE-L1 reg 
 \end_layout
 
 \end_inset
@@ -1140,7 +1140,7 @@ MSE-L1 reg
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4.7317
 \end_layout
 
 \end_inset
@@ -1149,7 +1149,7 @@ MSE-L1 reg
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8.0338
 \end_layout
 
 \end_inset
@@ -1334,7 +1334,7 @@ MAE - Elastic Net
 \begin_inset Text
 
 \begin_layout Plain Layout
-Polynomia 2 Degree, MSE loss
+2Polynomial, MSE loss
 \end_layout
 
 \end_inset
